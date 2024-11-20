@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Rood
 
   #### Je focus:
-  Surface plane
+Responsive
  
 </details>
 
@@ -38,13 +38,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Je opdracht:
  https://nl.gymshark.com
 
-  #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  #### Screenshot(s) van de eerste pagina (small screen):   
+  Home pagina
+  <img src="readme-images/IMG_3999.PNG" width="375px" alt="Home pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  FAQ pagina
+  <img src="readme-images/IMG_4019.PNG" width="375px" alt="FAQ pagina">
  
 </details>
 
@@ -57,8 +57,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-
-</details>
+    - Er zijn geen alt tags aanwezig op de content
+    - Het ging goed bij het selecteren van een andere taal en ander land waar je je bevindt, alleen het terug veranderen ging moeizaam.
+    - Niet alle interactieve elementen worden gefocust via de keyboard input (shift + tab)
+    - Horizontaal scrollen is niet mogelijk
+    - Er zit genoeg ruimte tussen interactieve buttons
+    - Slechte heading volgorde (sommige headings zijn divs)
+</details> 
 
 
 
@@ -68,13 +73,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/homepage.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/navmenu.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/Filtermenu.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -88,7 +93,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)  
 
 
   ### Agenda voor meeting
