@@ -56,13 +56,34 @@ Responsive
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
-    - Er zijn geen alt tags aanwezig op de content
-    - Het ging goed bij het selecteren van een andere taal en ander land waar je je bevindt, alleen het terug veranderen ging moeizaam.
-    - Niet alle interactieve elementen worden gefocust via de keyboard input (shift + tab)
-    - Horizontaal scrollen is niet mogelijk
-    - Er zit genoeg ruimte tussen interactieve buttons
-    - Slechte heading volgorde (sommige headings zijn divs)
+
+1. Content
+De tekst op de website is duidelijk en gemakkelijk te begrijpen zonder gebruik van aparte taal.
+Beschrijvingen van producten zijn vrij kort en kan problematisch zijn voor mensen die een visuele beperking hebben, in de alt text van de afbeelding staat zelfs niet welke kleur een broek is.
+2. Global code
+Er wordt slecht gebruik gemaakt van de headings, dit zijn <div> in plaats van bijvoorbeeld een <h2>
+3. Keyboard
+Alle interactieve elementen, zoals knoppen en links, kunnen goed worden bediend via het toetsenbord. De focusstatus is niet altijd zichtbaar wanneer gebruikers via het toetsenbord navigeren, wat het moeilijk maakt om te zien welk element geselecteerd is.
+4. Images
+De meeste afbeeldingen bevatten een alt-tekst die de inhoud van de afbeelding beschrijft. Bij sommige plaatjes staat de heading als alt tag in de image waardoor je niet weet wat het plaatje is.
+5. Headings
+De headings zijn niet goed gestructureerd. De hoofdtitel van de pagina zit in een banner, dit klopt niet. Verder zijn er meerdere H1 elementen wat niet mogelijk is.
+6. Lists
+De website gebruikt lijststructuren (zoals <ul> en <li>) op een goede manier, bij items zie je eerst een <ul> als parent en dan <li> items als children.
+7. Controls
+Knoppen en links zijn duidelijk gemarkeerd, en hun functionaliteit is direct herkenbaar. De elementen hebben een duidelijke focus status bij het navigeren met het toetsenbord.
+8. Media
+De video's op de website kunnen gepauzeerd worden, en de bedieningsknoppen zijn duidelijk zichtbaar. Wel spelen deze video's automatisch al af wat vervelend kan zijn voor iemand die veel prikkels binnenkrijgt.
+9. Appearance
+Het ontwerp van de website is eenvoudig, overzichtelijk en consistent, wat het voor gebruikers gemakkelijk maakt om te navigeren, soms is er wel sprake van tekst op een achtergrond wat vervelend kan zijn voor mensen die snel geprikkeld zijn.
+10. Animation
+De animaties op de website zijn erg klein en subtiel, je kunt zelfs een aantal animaties op pauze zetten wat zorgt voor meer rust in de pagina.
+11. Color Contrast
+Goed: De tekst op de website heeft over het algemeen goed kleurcontrast, wat de leesbaarheid vergroot. Het contrast van de heading en de video is als enige niet geweldig te zien, maar de rest complimenteert erg goed aan elkaar.
+12. Mobile and Touch
+
+De website schaalt goed op mobiele apparaten en past zich aan verschillende schermformaten aan. De volgorde verandert wel heel erg van de navigatie wat voor de gebruiker verwarrend kan zijn.
+De Gymshark-website heeft duidelijke tekst, maar productbeschrijvingen en alt-teksten missen soms belangrijke details. Headings zijn slecht gestructureerd en niet correct gecodeerd. Keyboardnavigatie werkt grotendeels goed, maar de focusstatus ontbreekt soms. Afbeeldingen bevatten onjuiste alt-tags, en video's spelen automatisch af, wat prikkelend kan zijn. Het kleurcontrast is overwegend goed, maar sommige tekst-over-achtergrond combinaties zijn onduidelijk. De mobiele weergave is responsive, maar kan verwarrend zijn door veranderde navigatievolgorde. De animaties zijn subtiel en te pauzeren. Over het algemeen biedt de website ruimte voor verbeteringen.
 </details> 
 
 
@@ -79,7 +100,7 @@ Responsive
   <img src="readme-images/navmenu.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/Filtermenu.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/filtermenu.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -108,11 +129,13 @@ Responsive
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+* H1 onzichtbaar op de website
+* Hierarchie headings verbeteren <h1> <h2> etc.
+* Verschil weten tussen <a href> en <button>
+* Input = search voor de zoekbalk
+* Minder gebruik maken van article en gebruik maken van ul en dan list items
+* Position komt nog in de les voor het verplaatsen van <nav>
+* <Summary> and details voor dropdownmenu
 
 </details>
 
