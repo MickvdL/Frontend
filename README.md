@@ -79,7 +79,7 @@ Het ontwerp van de website is eenvoudig, overzichtelijk en consistent, wat het v
 10. Animation
 De animaties op de website zijn erg klein en subtiel, je kunt zelfs een aantal animaties op pauze zetten wat zorgt voor meer rust in de pagina.
 11. Color Contrast
-Goed: De tekst op de website heeft over het algemeen goed kleurcontrast, wat de leesbaarheid vergroot. Het contrast van de heading en de video is als enige niet geweldig te zien, maar de rest complimenteert erg goed aan elkaar.
+De tekst op de website heeft over het algemeen goed kleurcontrast, wat de leesbaarheid vergroot. Het contrast van de heading en de video is als enige niet geweldig te zien, maar de rest complimenteert erg goed aan elkaar.
 12. Mobile and Touch
 
 De website schaalt goed op mobiele apparaten en past zich aan verschillende schermformaten aan. De volgorde verandert wel heel erg van de navigatie wat voor de gebruiker verwarrend kan zijn.
@@ -100,7 +100,7 @@ De Gymshark-website heeft duidelijke tekst, maar productbeschrijvingen en alt-te
   <img src="readme-images/navmenu.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/filtermenu.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/filtermenu.jpg  " width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
