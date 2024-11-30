@@ -58,6 +58,10 @@ nav li {
 	margin: 0 1em;
 }
 
+nav ul li:hover {
+	border-bottom: 3px solid var(--color-text);
+}
+
 nav img {
     height: 3em;
 }
@@ -153,36 +157,38 @@ nav .icons a img {
 }
 
 /****************************************************** Banner ******************************************************/
-header section article {
-	width: 100vw;	
+header section {
 	display: flex;
-	justify-content: center;
+    align-items: center;
+    justify-content: center; /* Horizontaal centreren */
+    flex-direction: column; /* Plaats tekst en links onder elkaar */
+    width: 100%;
+    overflow: hidden;
 }
-header section article img {
-	position: relative;
-	width: 100vw;
-	height: 20em;
+.overlay-content {
+    display: flex;
+    flex-direction: column; /* Stapel items onder elkaar */
+    align-items: center; /* Centreer tekst en links */
+    gap: 1em; /* Voeg ruimte tussen items toe */
+    color: var(--color-background); /* Witte tekstkleur voor contrast */
+    padding: 1em; /* Ruimte rondom de tekst */
+    width: 100%; /* Zorg dat de overlay de volledige breedte van de afbeelding bedekt */
+    text-align: center; /* Centreer de tekst */
+	position: absolute;
 }
 
-header section article h2  {
-	position: absolute;
+.overlay-content h2 {
+	font-size: 2em;
 	text-transform: var(--uppercase);
-	color: var(--color-background);
-	font-size: 2.5em;
-	margin-top: 1em;
 }
 
-header section article p {
-	position: absolute;
-	color: var(--color-background);
-	margin-top: 7em;
+header section img {
+	height: 30vh;
+	width: 100vw;
 }
 
-header section article a {
-	position: absolute;
-	display: inline-block; /* Zorgt ervoor dat de knop zich als een blok gedraagt, maar nog steeds inline blijft - W3Schools */
+.overlay-content a {
     padding: 1em 3em;
-	margin-top: 10em;
     background-color: var(--color-background);
 	color: var(--color-text);
 	font-weight: 600;
@@ -191,4 +197,250 @@ header section article a {
     text-align: center; 
     border-radius: 10em;
     font-size: 1em;
+}
+
+/****************************************************** Video + text ******************************************************/
+main .section-video {
+	display: flex; /* Gebruik Flexbox */
+    align-items: center; /* Centreer verticaal */   
+    position: relative; /* Voor overlay */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Voorkom dat inhoud buiten de container valt */
+}
+
+section video {
+	position: absolute; /* Video vult de achtergrond */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Zorg dat de video de container vult zonder vervorming */
+    z-index: -1; /* Zet de video achter de overlay-inhoud */
+}
+
+.overlay-content2 {
+	display: flex; /* Gebruik Flexbox */
+    flex-direction: column; /* Stapel items verticaal */
+    align-items: flex-start; /* Uitlijnen aan de linkerkant op desktop */
+    color: var(--color-background); /* Witte tekstkleur */
+    padding: 2em; /* Ruimte rondom de tekst */ 
+	gap: 1em;
+    border-radius: 10px; /* Optioneel: ronde hoeken */
+    text-align: left; /* Links uitlijnen */
+}
+.overlay-content2 h2 {
+    font-size: 3em;
+	text-transform: var(--uppercase);
+}
+
+.overlay-content2 p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+.overlay-content2 .buttonvideo {
+	display: inline-block; /* Zorgt ervoor dat de knop zich als een blok gedraagt, maar nog steeds inline blijft - W3Schools */
+    padding: 1em 15em;
+    background-color: var(--color-background);
+	color: var(--color-text);
+	font-weight: 600;
+    text-transform: var(--uppercase);
+    text-decoration: none; 
+    text-align: center; 
+    border-radius: 10em;
+    font-size: 1em;
+}
+
+.overlay-content2 .buttondames {
+	display: inline-block; /* Zorgt ervoor dat de knop zich als een blok gedraagt, maar nog steeds inline blijft - W3Schools */
+    padding: 1em 15em;
+    background-color: #4c4c4c;
+	color: var(--color-background);
+	font-weight: 600;
+    text-transform: var(--uppercase);
+    text-decoration: none; 
+    text-align: center; 
+    border-radius: 10em;
+    font-size: 1em;
+}
+
+/**************************************************** Shop *********************************************************************/
+
+/* Styling voor de titel en de 'Bekijk alles' link */
+section h3 {
+    font-size: 3em;
+    text-transform: var(--uppercase);
+}
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3em;
+    gap: 1em;
+}
+
+a {
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+main.shop {
+    display: flex; /* Plaatst de h3 en link naast elkaar */
+    justify-content: space-between; /* Ruimte tussen h3 en link */
+    margin-bottom: 20px; /* Ruimte onder de header */
+}
+
+/* Foto container met Grid */
+.container-product {
+    display: grid;       
+    justify-items: center;     
+    grid-template-columns: repeat(auto-fill, minmax(20vw, 4fr)); /* Dynamische kolommen op basis van schermgrootte */
+    width: 100vw;
+    gap: 2em;
+
+}
+
+/* Styling voor individuele product items */
+.product {
+    position: relative;
+    padding: 0.6em;
+    border-radius: 8px;
+    width: 20vw;
+
+}
+
+.product img {
+    width: 20vw;
+    transition: opacity 0.3s ease;
+}
+
+/* Positie van zoek- en winkelmand-icoontjes bovenaan het product */
+
+.search-icon {
+    left: 1em;
+}
+
+.bag-icon {
+    right: 1em;
+}
+
+div.product a img {
+    position: absolute;
+    top: 1em;
+    height: 2em;
+    width: 2em;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    border-radius: 5em;
+}
+
+/* De tekst onder de afbeelding */
+.product p, .product h4 {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.product p:last-child {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+@media (max-width: 767px) {
+    .overlay-content2 {
+        align-items: center; /* Centreer inhoud op mobiel */
+        text-align: left; /* Tekst blijft links uitgelijnd */
+        justify-content: center;
+		display: flex;
+		padding: 0.8em; /* Ruimte rondom de tekst */ 
+    }
+
+    .overlay-conten2 h2 {
+        font-size: 0.5em;
+    }
+
+    .overlay-content2 p {
+        font-size: 0.9rem;
+    }
+
+    .overlay-content2 a {
+        font-size: 0.9rem;
+    }
+	
+	.overlay-content2 .buttonvideo {
+		display: inline-block; /* Zorgt ervoor dat de knop zich als een blok gedraagt, maar nog steeds inline blijft - W3Schools */
+		padding: 1em 12em;
+		background-color: var(--color-background);
+		color: var(--color-text);
+		font-weight: 600;
+		text-transform: var(--uppercase);
+		text-decoration: none; 
+		text-align: center; 
+		border-radius: 10em;
+		font-size: 1em;
+	}
+	
+	.overlay-content2 .buttondames {
+		display: inline-block; /* Zorgt ervoor dat de knop zich als een blok gedraagt, maar nog steeds inline blijft - W3Schools */
+		padding: 1em 12em;
+		background-color: #4c4c4c;
+		color: var(--color-background);
+		font-weight: 600;
+		text-transform: var(--uppercase);
+		text-decoration: none; 
+		text-align: center; 
+		border-radius: 10em;
+		font-size: 1em;
+	}
+
+    /************************************************* container-product en product ********************************************/
+    .heading h3 {
+        margin: 0;
+    }
+    
+    .container-product {
+        display: grid;
+        grid-template-columns: repeat(4, 100vw); /* Zorgt voor horizontaal scrollen - ChatGPT */
+        overflow-x: auto; /* Maakt horizontaal scrollen mogelijk - ChatGPT */
+        scroll-snap-type: x mandatory; /* Zorgt voor smooth snapping bij swipen - Chat-GPT */
+        -webkit-overflow-scrolling: touch; /* Maakt scrollen soepel op iOS-apparaten - Chat-GPT */
+    }
+
+    .container-product::-webkit-scrollbar {
+        display: none; /* Verbergt de scrollbar in WebKit-browsers zoals Chrome en Safari - Chat-GPT */
+    }
+
+    .container-product {
+        -ms-overflow-style: none; /* Verbergt de scrollbar in Internet Explorer en Edge - Chat-GPT */
+        scrollbar-width: none; /* Verbergt de scrollbar in Firefox - Chat-GPT */
+    }
+
+    .product {
+        width: 100vw; /* Producten nemen de volle breedte van de viewport in */
+    }
+
+    .product img {
+        width: 100%; /* Afbeeldingen vullen het product */
+    }
+}
+
+
+/* Video zichtbaar/verbergen */
+@media (min-width: 768px) {
+    .video-desktop {
+        display: block;
+    }
+    .video-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .video-desktop {
+        display: none;
+    }
+    .video-mobile {
+        display: block;
+    }
 }
