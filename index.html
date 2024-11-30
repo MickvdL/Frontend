@@ -7,6 +7,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="logo" type="images/gymsharkicon" href="images/gs-icon-black.svg">
     <link rel="stylesheet" href="styles/style.css">
     <title>Gymshark clothing</title>
 </head>
@@ -141,60 +142,76 @@
             </div>
         </nav>
         <section>
-            <article>
-                <img src="images/blackfridaybackground.jpeg" alt="Banner">
+                <img src="images/banner.jpg" alt="Banner">
+            <div class="overlay-content">
                 <h2>De black friday sale</h2>
                 <p>Vanaf 21 november, 17:00 uur. Download de app en maak alvast een wishlist zodat je je favo fits straks zo snel mogelijk kunt scoren.</p>
                 <a href="#">Download de app</a>
-            </article>
+            </div>
         </section>
 </header>
     <main>
-        <section>
-            <article>
-                <video autoplay muted>
-                    <source src="images/Male_Look_Montage_V2_BANNER_3840x1440.mp4" type="video/mp4">
+        <section class="section-video">
+                <video class="video-desktop" autoplay muted>
+                    <source src="video/Male_Look_Montage_V2_BANNER_3840x1440.mp4" type="video/mp4">
                 </video>
+                <video class="video-mobile" autoplay muted>
+                    <source src="video/Dual_Looks_Montage_V2_BANNER_1080x1920.mp4" type="video/mp4">
+                </video>
+                <div class="overlay-content2">
                 <h2>Essentials voor de winter</h2>
                 <p>De duurzame, betaalbare, supercomfortabele laagjes voor het hele seizoen en langer.</p>
-                <a href="#">Dames</a>
-                <a href="#">Heren</a>
-            </article>  
+                <a href="#" class="buttonvideo">Heren</a>
+                <a href="#" class="buttondames">Dames</a>
+            </div>
         </section>
         <section>
+            <div class="heading">
             <h3>Winter essentials</h3>
             <a href="#">Bekijk alles</a>
-            <ul>
-                <li><img src="images/blackpants.jpg" alt="Black sweatpants"></li>
-                <li><a href="index.html"><img src="images/search.svg" alt="Search"></a></li>
-                <li><a href="index.html"><img src="images/bagicon.svg" alt="Shoppingbag"></a></li>
-                <li><p>4.3</p></li> 
-                <li><p>Chrest Straight Leg Joggers.</p></li>
-                <li><p>Regular Fit</p></li>
-                <li><p>Black</p></li>
-                <li><p>€45</p></li>
-            </ul>
-            <ul>
-                <li><img src="images/blackpantswhite.jpg" alt="Black jogger"></li>
-                <li><a href="index.html"><img src="images/search.svg" alt="Search"></a></li>
-                <li><a href="index.html"><img src="images/bagicon.svg" alt="Shoppingbag"></a></li>
-                <li><p>4.3</p></li> 
-                <li><p>White text .</p></li>
-                <li><p>Regular Fit</p></li>
-                <li><p>Black jogger with white pants</p></li>
-                <li><p>€45</p></li>
-            </ul>
-            <ul>
-                <li><img src="images/cresthoodie.jpg" alt="Crest hoodie black"></li>
-                <li><a href="index.html"><img src="images/search.svg" alt="Search"></a></li>
-                <li><a href="index.html"><img src="images/bagicon.svg" alt="Shoppingbag"></a></li>
-                <li><p>4.3</p></li> 
-                <li><p>Chrest black hoodie.</p></li>
-                <li><p>Regular Fit</p></li>
-                <li><p>Black</p></li>
-                <li><p>€45</p></li>
-            </ul>
-    </section>
+            </div>
+            <div class="container-product">
+                <div class="product">
+                    <img src="images/blackpants.jpg" alt="Black sweatpants">
+                    <a href="#"><img src="images/search.svg" class="search-icon" alt="Search"></a>
+                    <a href="#"><img src="images/bagicon.svg" class="bag-icon" alt="bag-icon"></a>
+                    <p>4.3</p>
+                    <h4>Chrest Straight Leg Joggers.</h4>
+                    <p>Regular Fit</p>
+                    <p>Black</p>
+                    <p>€45</p>
+                </div>
+                <div class="product">
+                    <img src="images/blackpantswhite.jpg" alt="Black jogger">
+                    <a href="#"><img src="images/search.svg" class="search-icon" alt="Search"></a>
+                    <a href="#"><img src="images/bagicon.svg" class="bag-icon" alt="bag-icon"></a>
+                    <p>4.3</p>
+                    <h4>Black jogger with white pants</h4>
+                    <p>Regular Fit</p>
+                    <p>€45</p>
+                </div>
+                <div class="product">
+                    <img src="images/cresthoodie.jpg" alt="Crest hoodie black">
+                    <a href="#"><img src="images/search.svg" class="search-icon" alt="Search"></a>
+                    <a href="#"><img src="images/bagicon.svg" class="bag-icon" alt="bag-icon"></a>
+                    <p>4.3</p>
+                    <h4>Chrest black hoodie.</h4>
+                    <p>Regular Fit</p>
+                    <p>Black</p>
+                    <p>€45</p>
+                </div>
+                <div class="product">
+                    <img src="images/blackpantswhite.jpg" alt="Black jogger">
+                    <a href="#"><img src="images/search.svg" class="search-icon" alt="Search"></a>
+                    <a href="#"><img src="images/bagicon.svg" class="bag-icon" alt="bag-icon"></a>
+                    <p>4.3</p>
+                    <h4>Black jogger with white pants</h4>
+                    <p>Regular Fit</p>
+                    <p>€45</p>
+                </div>
+        </section>
+        
+        
         <section>
             <h2>Winkel op prijs</h2>
             <ul>
@@ -216,18 +233,18 @@
         <section>
             <h3>Hoe ziet jouw training eruit?</h3>
             <ul>
-                <li><iframe src="#"></iframe></li>
+                <li><video autoplay muted><source src="video/liftingvideo.mp4" type="liftingvideo/mp4"></video></li>
                 <li><h3>Lifting</h3></li>
                 <li><a href="#">Shop nu</a></li>
             </ul>
             <ul>
-                <li> <iframe src="#"></iframe></li>
+                <li><video autoplay muted><source src="video/hardloopvideo.mp4" type="hardloopvideo/mp4"></video></li>
                 <li><h3>Hardlopen</h3></li>
                 <li><a href="#"></a></li>
             </ul>
             <ul>
-                <li> <iframe src="#"></iframe></li>
-                <li><h3>Lifting</h3></li>
+                <li><video autoplay muted><source src="video/yogavideo.mp4" type="yogavideo/mp4"></video></li>
+                <li><h3>Yoga</h3></li>
                 <li><a href="#">Shop nu</a></li>
             </ul>
         </section>
