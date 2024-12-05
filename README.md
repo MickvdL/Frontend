@@ -43,8 +43,8 @@ Responsive
   <img src="readme-images/IMG_3999.PNG" width="375px" alt="Home pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  FAQ pagina
-  <img src="readme-images/IMG_4019.PNG" width="375px" alt="FAQ pagina">
+  Heren pagina (shop)
+  <img src="readme-images/IMG_4019.PNG" width="375px" alt="Heren pagina shop">
  
 </details>
 
@@ -61,7 +61,7 @@ Responsive
 De tekst op de website is duidelijk en gemakkelijk te begrijpen zonder gebruik van aparte taal.
 Beschrijvingen van producten zijn vrij kort en kan problematisch zijn voor mensen die een visuele beperking hebben, in de alt text van de afbeelding staat zelfs niet welke kleur een broek is.
 2. Global code
-Er wordt slecht gebruik gemaakt van de headings, dit zijn <div> in plaats van bijvoorbeeld een <h2>
+Er wordt slecht gebruik gemaakt van de headings, dit zijn div in plaats van bijvoorbeeld een h2
 3. Keyboard
 Alle interactieve elementen, zoals knoppen en links, kunnen goed worden bediend via het toetsenbord. De focusstatus is niet altijd zichtbaar wanneer gebruikers via het toetsenbord navigeren, wat het moeilijk maakt om te zien welk element geselecteerd is.
 4. Images
@@ -69,7 +69,7 @@ De meeste afbeeldingen bevatten een alt-tekst die de inhoud van de afbeelding be
 5. Headings
 De headings zijn niet goed gestructureerd. De hoofdtitel van de pagina zit in een banner, dit klopt niet. Verder zijn er meerdere H1 elementen wat niet mogelijk is.
 6. Lists
-De website gebruikt lijststructuren (zoals <ul> en <li>) op een goede manier, bij items zie je eerst een <ul> als parent en dan <li> items als children.
+De website gebruikt lijststructuren (zoals ul en li) op een goede manier, bij items zie je eerst een ul als parent en dan li items als children.
 7. Controls
 Knoppen en links zijn duidelijk gemarkeerd, en hun functionaliteit is direct herkenbaar. De elementen hebben een duidelijke focus status bij het navigeren met het toetsenbord.
 8. Media
@@ -81,8 +81,9 @@ De animaties op de website zijn erg klein en subtiel, je kunt zelfs een aantal a
 11. Color Contrast
 De tekst op de website heeft over het algemeen goed kleurcontrast, wat de leesbaarheid vergroot. Het contrast van de heading en de video is als enige niet geweldig te zien, maar de rest complimenteert erg goed aan elkaar.
 12. Mobile and Touch
-
 De website schaalt goed op mobiele apparaten en past zich aan verschillende schermformaten aan. De volgorde verandert wel heel erg van de navigatie wat voor de gebruiker verwarrend kan zijn.
+
+
 De Gymshark-website heeft duidelijke tekst, maar productbeschrijvingen en alt-teksten missen soms belangrijke details. Headings zijn slecht gestructureerd en niet correct gecodeerd. Keyboardnavigatie werkt grotendeels goed, maar de focusstatus ontbreekt soms. Afbeeldingen bevatten onjuiste alt-tags, en video's spelen automatisch af, wat prikkelend kan zijn. Het kleurcontrast is overwegend goed, maar sommige tekst-over-achtergrond combinaties zijn onduidelijk. De mobiele weergave is responsive, maar kan verwarrend zijn door veranderde navigatievolgorde. De animaties zijn subtiel en te pauzeren. Over het algemeen biedt de website ruimte voor verbeteringen.
 </details> 
 
@@ -257,7 +258,7 @@ De Gymshark-website heeft duidelijke tekst, maar productbeschrijvingen en alt-te
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
+  1. W3Schools
   2. bron 2
   3. ...
 

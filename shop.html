@@ -12,183 +12,331 @@
 </head>
 <body>
     <header>
-        <h1>Gymshark clothing</h1>
-        <p>10% studentenkorting</p> 
-		<nav class="submenu">
-            <ul>
-                <li><a href="#"><img src="images/profileicon.svg" alt="Profile"></a><a href="#">Account</a></li>
-                <li><a href="#">Toegankelijkheidsverklaring</a></li>
-                <li><a href="#">Hulp</a></li>
-                <li><a href="#">Email signup</a></li>
-            </ul>	
-        </nav>
-        <nav>
-            <a href="index.html"><img src="images/gs-icon-black.svg" alt="Gymshark logo"></a>
-            <ul>
-                <li><a href="#">Dames</a></li>
-                <li><a href="#">Heren</a></li>
-                <li><a href="#">Accessoires</a></li>
-            </ul>	
-            <input type="text" placeholder="Search..">
-            <a href="#"><img src="images/search.svg" alt="Search"></a>
-            <a href="#"><img src="images/profileicon.svg" alt="Profile"></a>
-            <a href="#"><img src="images/bagicon.svg" alt="Shoppingbag"></a>
-        </nav>
+        <nav class="submenu">
+                <ul>
+                    <li><a href="#"><img src="images/svg/profileicon.svg" alt="Profile icon"></a><a href="#">Account</a></li>
+                    <li><a href="#">Toegankelijkheidsverklaring</a></li>
+                    <li><a href="#">Hulp</a></li>
+                    <li><a href="#">Email signup</a></li>
+                </ul>	
+            </nav>
+            <nav>
+             <button aria-hidden="true"><img src="images/svg/Hamburger.svg" alt="Hamburgermenu" /></button>
+             <button aria-hidden="true"><img src="images/svg/close.svg" alt="close button" /></button>
+                <!-- Logo -->
+                <a href="#"><img src="images/svg/gs-icon-black.svg" alt="Gymshark logo"></a>
+                <!-- Menu -->
+                <ul>
+                    <!-- Dames -->
+                    <li>
+                        <h2><a href="#">Dames</a></h2>
+                        <ul>
+                            <li>
+                                <h3>Leggings</h3>
+                                <ul>
+                                    <li><a href="#">Alle leggings</a></li>
+                                    <li><a href="#">Hoog getailleerd</a></li>
+                                    <li><a href="#">Naadloze leggings</a></li>
+                                    <li><a href="#">Scrunch bum leggings</a></li>
+                                    <li><a href="#">Leggings met zakken</a></li>
+                                    <li><a href="#">Zwarte leggings</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Producten</h3>
+                                <ul>
+                                    <li><a href="#">Nieuw</a></li>
+                                    <li><a href="#">Alle producten</a></li>
+                                    <li><a href="#">Leggings</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Nieuw</h3>
+                                <ul>
+                                    <li><a href="#">Leggings gids</a></li>
+                                    <li><a href="#">Sport-bh gids</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+            
+                    <!-- Heren -->
+                    <li>
+                        <h2><a href="#">Heren</a></h2>
+                        <ul>
+                            <li>
+                                <h3>Producten</h3>
+                                <ul>
+                                    <li><a href="#">Nieuw</a></li>
+                                    <li><a href="#">Alle producten</a></li>
+                                    <li><a href="#">Leggings</a></li>
+                                    <li><a href="#">T-shirts</a></li>
+                                    <li><a href="#">Sport-bh's</a></li>
+                                    <li><a href="#">Shorts</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Ontdekken</h3>
+                                <ul>
+                                    <li><a href="#">Short gids</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+            
+                    <!-- Accessoires -->
+                    <li>
+                        <h2><a href="#">Accessoires</a></h2>
+                        <ul>
+                            <li>
+                                <h3>Tassen</h3>
+                                <ul>
+                                    <li><a href="#">Tassen</a></li>
+                                    <li><a href="#">Weekend tassen</a></li>
+                                    <li><a href="#">Rugtassen</a></li>
+                                    <li><a href="#">Tote bags</a></li>
+                                    <li><a href="#">Kleine tassen</a></li>
+                                    <li><a href="#">Sleutelhangers</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Sokken</h3>
+                                <ul>
+                                    <li><a href="#">Sportsokken</a></li>
+                                    <li><a href="#">Crewsokken</a></li>
+                                    <li><a href="#">Enkelsokken</a></li>
+                                    <li><a href="#">Sneakersokken</a></li>
+                                    <li><a href="#">Sokken met print</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Ondergoed</h3>
+                                <ul>
+                                    <li><a href="#">Damesondergoed</a></li>
+                                    <li><a href="#">Herenondergoed</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Headwear</h3>
+                                <ul>
+                                    <li></li>
+                                    <li><a href="#">Alle hoofdaccessoires</a></li>
+                                    <li><a href="#">Petten</a></li>
+                                    <li><a href="#">Mutsen</a></li>
+                                    <li><a href="#">Haaraccessoires</a></li>
+                                    <li><a href="#">Hijab</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Icons -->
+                <div class="icons">
+                    <div class="searchbar">   
+                        <input type="search" placeholder="Wat zoek je vandaag?">
+                        <a href="#"><img src="images/svg/search.svg" alt="Search"></a>
+                    </div>
+                    <a href="#"><img src="images/svg/hearticon.svg" alt="Wishlist"></a>
+                    <a href="#"><img src="images/svg/profileicon.svg" alt="Profile"></a>
+                    <a href="#"><img src="images/svg/bagicon.svg" alt="Shopping bag"></a>
+                </div>
+            </nav>
+           
     </header>
     <main>
-         <section>
-            <article>
-                <img src="images/banner.jpg">
-                <h2>De black friday sale</h2>
-                <p>Vanaf 21 november, 17:00 uur. Download de app en maak alvast een wishlist zodat je je favo fits straks zo snel mogelijk kunt scoren.</p>
-                <button type="button">Download de app</button>
-            </article>
+     <section class="overlay-content-shop">
+            <img src="images/manwithbackground.png" alt="Men with industrial background">
+            <img src="images/manwithbakcgroundmobile.png" alt="Men with industrial background">
+            <div class="overlay-text">
+                <h2>Nieuw</h2>
+                <p>Voor extra trainingsmotivatie of kledingkast-inspiratie.</p>
+            </div>
         </section>
-        <section>
-            <article>
-                <iframe src="#"></iframe>
-                <h2>Essentials voor de winter</h2>
-                <p>De duurzame, betaalbare, supercomfortabele laagjes voor het hele seizoen en langer.</p>
-                <a href="#">Dames</a>
-                <a href="#">Heren</a>
-            </article>  
-        </section>
-        <section>
-            <h3>Winter essentials</h3>
-            <a href="#">Bekijk alles</a>
-            <ul>
-                <li><img src="images/blackpants.jpg" alt="Black sweatpants"></li>
-                <li><a href="index.html"><img src="images/search.svg" alt="Search"></a></li>
-                <li><a href="index.html"><img src="images/bagicon.svg" alt="Shoppingbag"></a></li>
-                <li><p>4.3</p></li> 
-                <li><p>Chrest Straight Leg Joggers.</p></li>
-                <li><p>Regular Fit</p></li>
-                <li><p>Black</p></li>
-                <li><p>€45</p></li>
-            </ul>
-            <ul>
-                <li><img src="images/blackpantswhite.jpg" alt="Black jogger"></li>
-                <li><a href="index.html"><img src="images/search.svg" alt="Search"></a></li>
-                <li><a href="index.html"><img src="images/bagicon.svg" alt="Shoppingbag"></a></li>
-                <li><p>4.3</p></li> 
-                <li><p>White text .</p></li>
-                <li><p>Regular Fit</p></li>
-                <li><p>Black jogger with white pants</p></li>
-                <li><p>€45</p></li>
-            </ul>
-            <ul>
-                <li><img src="images/cresthoodie.jpg" alt="Crest hoodie black"></li>
-                <li><a href="index.html"><img src="images/search.svg" alt="Search"></a></li>
-                <li><a href="index.html"><img src="images/bagicon.svg" alt="Shoppingbag"></a></li>
-                <li><p>4.3</p></li> 
-                <li><p>Chrest black hoodie.</p></li>
-                <li><p>Regular Fit</p></li>
-                <li><p>Black</p></li>
-                <li><p>€45</p></li>
-            </ul>
+        <section class="filter-sorting">
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">Prijs: laag naar hoog</label>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">Prijs: hoog naar laag</label>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">Relevantie</label>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">Nieuwste</label>
     </section>
-        <section>
-            <h2>Winkel op prijs</h2>
-            <ul>
-                <li><img src="images/gymtop.jpeg" alt="Gymtops"></li>
-                <li><h3>Dames cadeaus onder €30</h3></li>
-                <li><a href="#">Shop nu</a></li>
-            </ul>
-            <ul>
-                <li><img src="images/gymshirt.jpeg" alt="Gymtops"></li>
-                <li><h3>Heren cadeaus onder €30</h3></li>
-                <li><a href="#">Shop nu</a></li>
-            </ul>
-            <ul>
-                <li><img src="images/gymtopheadphone.jpeg" alt="Gymtops"></li>
-                <li><h3>Alle producten voor dames</h3></li>
-                <li><a href="#">Shop nu</a></li>
-            </ul>
-        </section>
-        <section>
-            <h3>Hoe ziet jouw training eruit?</h3>
-            <ul>
-                <li><iframe src="#"></iframe></li>
-                <li><h3>Lifting</h3></li>
-                <li><a href="#">Shop nu</a></li>
-            </ul>
-            <ul>
-                <li> <iframe src="#"></iframe></li>
-                <li><h3>Hardlopen</h3></li>
-                <li><a href="#"></a></li>
-            </ul>
-            <ul>
-                <li> <iframe src="#"></iframe></li>
-                <li><h3>Lifting</h3></li>
-                <li><a href="#">Shop nu</a></li>
-            </ul>
-        </section>
-        
+    <section>
+        <ul class="container-product2">
+            <li class="product">
+                <img src="images/clothing/stringer.jpg" alt="Grey stringer">
+                <a href="#"><img src="images/svg/hearticon.svg" class="search-icon" alt="Search"></a>
+                <p>3.9</p>
+                <h4>Heritage washed stringer</h4>
+                <p>Oversized fit</p>
+                <p></p>
+                <p>€45</p>
+            </li>
+            <li class="product">
+                <img src="images/clothing/capfront.jpg" alt="Base green cap">
+                <a href="#"><img src="images/svg/hearticon.svg" class="search-icon" alt="Search"></a>
+                <p>4.3</p>
+                <h4>Legacyy cap</h4>
+                <p>Base green</p>
+                <p>Black</p>
+                <p>€22</p>
+            </li>
+            <li class="product">
+                <img src="images/clothing/greensocks.jpg" alt="Green socks">
+                <a href="#"><img src="images/svg/hearticon.svg" class="search-icon" alt="Search"></a>
+                <p>4.2</p>
+                <h4>Legacy crew 2pack</h4>
+                <p>Celement brown/Base Green</p>
+                <p>€22</p>
+            </li>
+            <li class="product">
+                <img src="images/clothing/pinksocks.jpg" alt="Black jogger">
+                <a href="#"><img src="images/svg/hearticon.svg" class="search-icon" alt="Search"></a>
+                <p>4.5</p>
+                <h4>Frill Crew Single Socks</h4>
+                <p>Muted Pink</p>
+                <p>€12</p>
+            </li> 
+            <li class="product">
+                <img src="images/clothing/blackpants.jpg" alt="Black sweatpants front">
+                <a href="#"><img src="images/svg/hearticon.svg" class="search-icon" alt="Search"></a>
+                <p>4.8</p>
+                <h4>Chrest Straight Leg Joggers.</h4>
+                <p>Regular Fit</p>
+                <p>Black</p>
+                <p>€45</p>
+            </li>
+            <li class="product">
+                <img src="images/clothing/crewneckbeige.jpg" alt="Crewneck beige with orange gymshark logo in the middle">
+                <a href="#"><img src="images/svg/hearticon.svg" class="search-icon" alt="Search"></a>
+                <p>4.3</p>
+                <h4>Beige crewneck</h4>
+                <p>Regular Fit</p>
+                <p>Beige</p>
+                <p>€33</p>
+            </li>
+            <li class="product">
+                <img src="images/clothing/sweatpantsblack.jpg" alt="Black sweatpants with gymshark in classic bold font">
+                <a href="#"><img src="images/svg/hearticon.svg" class="search-icon" alt="Search"></a>
+                <p>4.3</p>
+                <h4>Black sweatpants white print</h4>
+                <p>Regular Fit</p>
+                <p>Black</p>
+                <p>€45</p>
+            </li>
+            <li class="product">
+                <img src="images/clothing/cresthoodie.jpg" alt="Crest hoodie black">
+                <a href="#"><img src="images/svg/hearticon.svg" class="search-icon" alt="Search"></a>
+                <p>4.2</p>
+                <h4>Chrest black hoodie.</h4>
+                <p>Regular Fit</p>
+                <p>Black</p>
+                <p>€55</p>
+            </li>
+            <li class="product">
+                <img src="images/backguydesktop.png" alt="Guy who turns back on camera">
+                <img src="images/backguymobile.png" alt="Guy who turns back on camera">
+                <div class="overlay-text-lastproduct">
+                    <h2>Onze beste Items voor jouw PR's</h2>
+                    <p>Er is één ding dat we doen… en dat doen we goed. Wat je ook in de gym doet, doe het in onze must-haves.</p>
+                    <a href="#">Shop nu</a>
+                </div>
+            </li>
+        </ul>
+       
+    </section>
     </main>
     <footer>
-        <section>
-        <h4>Accessoires</h4>
-        <ul>
-            <li><a href="#">Damesondergoed</a></li>
-            <li><a href="#">Heren ondergoed</a></li>
-            <li><a href="#">Tassen</a></li>
-            <li><a href="#">Sporttassen</a></li>
-            <li><a href="#">Sportsokken</a></li>
-            <li><a href="#">Crew socks</a></li>
-            <li><a href="#">Petten</a></li>
-            <li><a href="#">Beanies</a></li>
-          
-        </ul>
-        </section>
-        <section>
-            <h4>Sportkleding</h4>
-            <p>Onze sportkleding is ontworpen om het beste uit jezelf te halen. Want als je maximaal wilt presteren, zou niets je in de weg moeten zitten - zeker je gymkleding niet.</p>
-            <h5>Gymshark Sportkleding</h5>
-            <p>We zorgen er met onze sportkleding voor dat je het beste uit jezelf kunt halen – ongeacht de sport die je beoefent. Onze collecties zijn ontworpen om je de steun te geven die je nodig hebt om optimaal te kunnen presteren. 
-                Of dat nu op de baan, in de gym of in de studio is. Tussen onze <strong>dames- en herencollecties</strong> vind je zweetafvoerende <strong>t-shirts en tanktops, shorts, joggingbroeken, leggings, sport-bh’s</strong> en meer. 
-                Veel van onze kleding is afgewerkt met een comfortabele seamless technologie, waarmee je wrijving tijdens het trainen voorkomt. 
-                Daarnaast maken we voor sommige collecties gebruik van innovatieve stoffen en technologieën. 
-                Zo helpt ESNCE™️ technologie bijvoorbeeld om geurtjes tijdens het sporten tegen te gaan en geeft de super elastische en boterzachte RLSE™️ stof je ultieme bewegingsvrijheid. 
-                Alles wat we ontwerpen doen we vanuit de gedachte dat we trainingen en rustdagen naar een hoger niveau willen tillen, zodat jij je doelen keer op keer zo comfortabel mogelijk bereikt.
-            </p>
-            </section>
-            <nav>
-            <details>
-                <summary>Hulp</summary>
+        <footer>
+            <section class="links">
                 <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Leveringen & retouren</a></li>
-                    <li><a href="#">Retour aanvragen</a></li>
-                    <li><a href="#">Leveringen & retouren</a></li>
-                    <li><a href="#">Retour aanvragen</a></li>
+                    <li><h5>Women's leggings</h5></li>
+                    <li><a href="#">Leggings</a></li>
+                    <li><a href="#">Sportleggings met zakken</a></li>
+                    <li><a href="#">Hoge taille Gymleggings</a></li>
+                    <li><a href="#">Scrunch-Bum Leggings</a></li>
+                    <li><a href="#">Zwarte Leggings</a></li>
+                    <li><a href="#">Flared leggings</a></li>
+                    <li><a href="#">Naadloze leggings</a></li>
                 </ul>
-            </details>
-            <details>
-                <summary>Mijn account</summary>
                 <ul>
-                    <li><a href="#">Inloggen</a></li>
-                    <li><a href="#">Registreer</a></li>
+                    <li><h5>Women's leggings</h5></li>
+                    <li><a href="#">Sportkleding voor dames</a></li>
+                    <li><a href="#">Womens Gym Shorts</a></li>
+                    <li><a href="#">Running Shorts</a></li>
+                    <li><a href="#">Sports Bras</a></li>
+                    <li><a href="#">High Impact Sports Bras</a></li>
+                    <li><a href="#">Zwarte Sport Bh's</a></li>
+                    <li><a href="#">Bijpassende Setjes</a></li>
+                    <li><a href="#">Loungewear</a></li>
                 </ul>
-            </details>
-            <details>
-                <summary>Pagina's</summary>
-                <ul>
-                    <li><a href="#">Banen</a></li>
-                    <li><a href="#">Over ons</a></li>
-                    <li><a href="#">Studentenkorting</a></li>
-                    <li><a href="#">Factorylist</a></li>
-                </ul>
-            </details> 
-            </nav>
-            <ul class="paymentcards">
-                <li><img src="images/cards/visa-card.svg"></li>
-                <li><img src="images/cards/mastercard-card.svg"></li>
-                <li><img src="images/cards/amex-card.svg"></li>
-                <li><img src="images/cards/paypal-card.svg"></li>
-                <li><img src="images/cards/applepay-card.svg"></li>
-                <li><img src="images/cards/klarna-pay-now-2516bae6e2a318cb44e4d29b920d93544d06e2a4b5ebcb985ab39202a68885c4.svg"></li>
+            <ul>
+                <li><h5>Men's gymwear</h5></li>
+                <li><a href="#">Sportkleding voor heren</a></li>
+                <li><a href="#">Mens Gym shorts</a></li>
+                <li><a href="#">Shorts with Pockets</a></li>
+                <li><a href="#">Hardloopbroeken voor heren </a></li>
+                <li><a href="#">Sportshirts</a></li>
+                <li><a href="#">Mouwloos</a></li>
+                <li><a href="#">Gym stringers</a></li>
+                <li><a href="#">Heren Base Layer</a></li>
             </ul>
-    </footer>
+           
+            <ul>
+                <li> <h5>Accessoires</h5></li>
+                <li><a href="#">Damesondergoed</a></li>
+                <li><a href="#">Heren ondergoed</a></li>
+                <li><a href="#">Tassen</a></li>
+                <li><a href="#">Sporttassen</a></li>
+                <li><a href="#">Sportsokken</a></li>
+                <li><a href="#">Crew socks</a></li>
+                <li><a href="#">Petten</a></li>
+                <li><a href="#">Beanies</a></li>
+            </ul>
+            </section>
+            <section class="paragraph">
+                <h4>Sportkleding</h4>
+                <p>Onze sportkleding is ontworpen om het beste uit jezelf te halen. Want als je maximaal wilt presteren, zou niets je in de weg moeten zitten - zeker je gymkleding niet.</p>
+                <h5>Gymshark Sportkleding</h5>
+                <p>We zorgen er met onze sportkleding voor dat je het beste uit jezelf kunt halen ongeacht de sport die je beoefent. Onze collecties zijn ontworpen om je de steun te geven die je nodig hebt om optimaal te kunnen presteren. 
+                    Of dat nu op de baan, in de gym of in de studio is. Tussen onze <strong>dames- en herencollecties</strong> vind je zweetafvoerende <strong>t-shirts en tanktops, shorts, joggingbroeken, leggings, sport-bh’s</strong> en meer. 
+                    Veel van onze kleding is afgewerkt met een comfortabele seamless technologie, waarmee je wrijving tijdens het trainen voorkomt. 
+                    Daarnaast maken we voor sommige collecties gebruik van innovatieve stoffen en technologieën. 
+                    Zo helpt ESNCE™️ technologie bijvoorbeeld om geurtjes tijdens het sporten tegen te gaan en geeft de super elastische en boterzachte RLSE™️ stof je ultieme bewegingsvrijheid. 
+                    Alles wat we ontwerpen doen we vanuit de gedachte dat we trainingen en rustdagen naar een hoger niveau willen tillen, zodat jij je doelen keer op keer zo comfortabel mogelijk bereikt.
+                </p>
+                </section>
+                <nav>
+                <details>
+                    <summary>Hulp</summary>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Leveringen & retouren</a></li>
+                        <li><a href="#">Retour aanvragen</a></li>
+                        <li><a href="#">Leveringen & retouren</a></li>
+                        <li><a href="#">Retour aanvragen</a></li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Mijn account</summary>
+                    <ul>
+                        <li><a href="#">Inloggen</a></li>
+                        <li><a href="#">Registreer</a></li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Pagina's</summary>
+                    <ul>
+                        <li><a href="#">Banen</a></li>
+                        <li><a href="#">Over ons</a></li>
+                        <li><a href="#">Studentenkorting</a></li>
+                        <li><a href="#">Factorylist</a></li>
+                    </ul>
+                </details> 
+    
+                </nav>
+        </footer>
 </body>
 
 </html>
