@@ -4,67 +4,344 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/gs-icon-black.svg">
     <link rel="stylesheet" href="styles/style.css">
     <title>Gymshark clothing</title>
 </head>
+
 <body>
     <h1>Gymshark clothing</h1>
+    <nav class="bovenmenu">
+        <ul>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Toegankelijkheidsverklaring</a></li>
+            <li><a href="#">Hulp</a></li>
+            <li><a href="#">Email signup</a></li>
+        </ul>
+    </nav>
     <header>
-        <nav>
-            <a href="#"><img src="images/svg/gs-icon-black.svg" alt="Gymshark logo"></a>
-            <button class="hamburger" aria-label="Open menu">&#9776;</button>
-            <ul>
-                <li><a href="#">Dames</a>
-                    <ul>
-                        <li><a href="#">Sport BH's</a></li>
-                        <li><a href="#">Leggings</a></li>
-                        <li><a href="#">Tops</a></li>
-                    </ul>
-                </li>
+        <a href="index.html"><img src="images/svg/gs-icon-black.svg" alt="Gymshark logo"></a>
+        <nav class="tablet-nav">
+            <div id="menuToggle">
+                <input type="checkbox" id="menuCheckbox">
+                <span></span> <span></span> <span></span>
+                <ul id="menu">
+                    <li>
+                        <h3 class="tablet-heading">Shop</h3>
+                        <!-- Tab links -->
+                        <div class="tab">
+                            <button class="tablinks" onclick="openCity(event, 'London')">Dames</button>
+                            <button class="tablinks" onclick="openCity(event, 'Paris')">Heren</button>
+                            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Accessoires</button>
+                        </div>
+
+                        <!-- Tab content -->
+                        <div id="London" class="tabcontent">
+
+                            <img src="images/featured3.jpeg" alt="Gymkleding voor heren">
+                            <details>
+                                <summary>
+                                    Trending
+                                    <img src="images/svg/dorpdown.svg" alt="Gymkleding voor heren">
+                                </summary>
+
+                                <ul>
+                                    <li>Nieuw</li>
+                                    <li>Must haves</li>
+                                    <li>Graphics</li>
+                                    <li>Laagjes voor het seizoen</li>
+                                    <li>Binnenkort beschikbaar</li>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary>
+                                    Producten
+                                    <img src="images/svg/dorpdown.svg" alt="Gymkleding voor heren">
+                                </summary>
+
+                                <ul>
+                                    <li>Nieuw</li>
+                                    <li>Must haves</li>
+                                    <li>Graphics</li>
+                                    <li>Laagjes voor het seizoen</li>
+                                    <li>Binnenkort beschikbaar</li>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary>
+                                    Ontdekken
+                                    <img src="images/svg/dorpdown.svg" alt="Gymkleding voor heren">
+                                </summary>
+
+                                <ul>
+                                    <li>Nieuw</li>
+                                    <li>Must haves</li>
+                                    <li>Graphics</li>
+                                    <li>Laagjes voor het seizoen</li>
+                                    <li>Binnenkort beschikbaar</li>
+                                </ul>
+                            </details>
+                        </div>
+                        <div id="Paris" class="tabcontent">
+
+                            <img src="images/featured4.png" alt="Gymkleding voor heren">
+                            <details>
+                                <summary>
+                                    Trending
+                                    <img src="images/svg/dorpdown.svg" alt="Gymkleding voor heren">
+                                </summary>
+
+                                <ul>
+                                    <li>Nieuw</li>
+                                    <li>Must haves</li>
+                                    <li>Graphics</li>
+                                    <li>Laagjes voor het seizoen</li>
+                                    <li>Binnenkort beschikbaar</li>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary>
+                                    Producten
+                                    <img src="images/svg/dorpdown.svg" alt="Gymkleding voor heren">
+                                </summary>
+
+                                <ul>
+                                    <li>Nieuw</li>
+                                    <li>Must haves</li>
+                                    <li>Graphics</li>
+                                    <li>Laagjes voor het seizoen</li>
+                                    <li>Binnenkort beschikbaar</li>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary>
+                                    Ontdekken
+                                    <img src="images/svg/dorpdown.svg" alt="Gymkleding voor heren">
+                                </summary>
+
+                                <ul>
+                                    <li>Nieuw</li>
+                                    <li>Must haves</li>
+                                    <li>Graphics</li>
+                                    <li>Laagjes voor het seizoen</li>
+                                    <li>Binnenkort beschikbaar</li>
+                                </ul>
+                            </details>
+                        </div>
+                        <div id="Tokyo" class="tabcontent">
+                            <img src="images/featured5.jpeg" alt="Gymkleding voor heren">
+                            <details>
+                                <summary>
+                                    Trending
+                                    <img src="images/svg/dorpdown.svg" alt="Gymkleding voor heren">
+                                </summary>
+
+                                <ul>
+                                    <li>Nieuw</li>
+                                    <li>Must haves</li>
+                                    <li>Graphics</li>
+                                    <li>Laagjes voor het seizoen</li>
+                                    <li>Binnenkort beschikbaar</li>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary>
+                                    Producten
+                                    <img src="images/svg/dorpdown.svg" alt="Gymkleding voor heren">
+                                </summary>
+
+                                <ul>
+                                    <li>Nieuw</li>
+                                    <li>Must haves</li>
+                                    <li>Graphics</li>
+                                    <li>Laagjes voor het seizoen</li>
+                                    <li>Binnenkort beschikbaar</li>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary>
+                                    Ontdekken
+                                    <img src="images/svg/dorpdown.svg" alt="Gymkleding voor heren">
+                                </summary>
+
+                                <ul>
+                                    <li>Nieuw</li>
+                                    <li>Must haves</li>
+                                    <li>Graphics</li>
+                                    <li>Laagjes voor het seizoen</li>
+                                    <li>Binnenkort beschikbaar</li>
+                                </ul>
+                            </details>
+
+                        </div>
+                        <nav class="bovenmenu">
+                            <ul>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="#">Toegankelijkheidsverklaring</a></li>
+                                <li><a href="#">Hulp</a></li>
+                                <li><a href="#">Email signup</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="desktop-nav">
+            <ul class="mainmenu">
+
+                <!-- HOOFDMENU HEREN -->
+
                 <li><a href="#">Heren</a>
-                    <ul>
-                        <li><a href="#">Shirts</a></li>
-                        <li><a href="#">Shorts</a></li>
-                        <li><a href="#">Hoodies</a></li>
+                    <ul class="submenu-container">
+                        <li>
+
+                            <!-- Submenu heren producten -->
+                            <ul class="submenu">
+                                <li class="menuheading">Producten</li>
+                                <li><a href="shop.html">Nieuw</a></li>
+                                <li><a href="#">Alle producten</a></li>
+                                <li><a href="#">Leggings</a></li>
+                                <li><a href="#">T-shirts</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- Submenu heren ontdekken -->
+                            <ul class="submenu">
+                                <li class="menuheading">Ontdekken</li>
+                                <li><a href="#">Nieuw</a></li>
+                                <li><a href="#">Alle producten</a></li>
+                                <li><a href="#">Leggings</a></li>
+                                <li><a href="#">T-shirts</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
-                <li><a href="#">Accessoires</a>
-                    <ul>
-                        <li><a href="#">Tassen</a></li>
-                        <li><a href="#">Petjes</a></li>
-                        <li><a href="#">Flessen</a></li>
+
+                <!-- EINDE HOOFDMENU HEREN -->
+
+                <!-- HOOFDMENU DAMES -->
+
+                <li><a href="#">Dames</a>
+                    <ul class="submenu-container">
+                        <li>
+                            <!-- Submenu dames producten -->
+                            <ul class="submenu">
+                                <li class="menuheading">Producten</li>
+                                <li><a href="shop.html">Nieuw</a></li>
+                                <li><a href="#">Alle producten</a></li>
+                                <li><a href="#">Leggings</a></li>
+                                <li><a href="#">T-shirts</a></li>
+                                <li><a href="#">Sport-bh's</a></li>
+                                <li><a href="#">Shorts</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- Submenu dames ontdekken -->
+                            <ul class="submenu">
+                                <li class="menuheading">Trending</li>
+                                <li><a href="#">Nieuwe</a></li>
+                                <li><a href="#">Graphics</a></li>
+                                <li><a href="#">Laagjes voor het seizoen</a></li>
+                                <li><a href="#">Burgundy Gymsets</a></li>
+                            </ul>
+                        </li>
                     </ul>
+                </li>
+
+                <!-- EINDE HOOFDMENU DAMES -->
+
+                <!-- HOOFDMENU ACCESSOIRES -->
+
+                <li><a href="#">Accessoires</a>
+                    <ul class="submenu-container">
+                        <li>
+                            <!-- Submenu accessoires -->
+                            <ul class="submenu">
+                                <li class="menuheading">Tassen</li>
+                                <li><a href="#">Tassen</a></li>
+                                <li><a href="#">Weekend tassen</a></li>
+                                <li><a href="#">Rugtassen</a></li>
+                                <li><a href="#">Tote bags</a></li>
+                                <li><a href="#">Kleine tassen</a></li>
+                                <li><a href="#">Sleutelhangers</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- Submenu accessoires sokken -->
+                            <ul class="submenu">
+                                <li class="menuheading">Sokken</li>
+                                <li><a href="#">Sportsokken</a></li>
+                                <li><a href="#">Crewsokken</a></li>
+                                <li><a href="#">Enkelsokken</a></li>
+                                <li><a href="#">Sneakersokken</a></li>
+                                <li><a href="#">Sokken met print</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- Submenu accessoires ondergoed -->
+                            <ul class="submenu">
+                                <li class="menuheading">Ondergoed</li>
+                                <li><a href="#">Damesondergoed</a></li>
+                                <li><a href="#">Herenondergoed</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- Submenu accessoires hoofdaccessoires -->
+                            <ul class="submenu">
+                                <li class="menuheading">Alle hoofdaccessoires</li>
+                                <li><a href="#">Petten</a></li>
+                                <li><a href="#">Mutsen</a></li>
+                                <li><a href="#">Haaraccessoires</a></li>
+                                <li><a href="#">Hijab</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--  <ul class="submenu-photocontainer">
+            <li>
+
+            Submenu accessoires hoofdaccessoires
+              <ul class="submenuphoto">
+                <li class="menuheading">Featured</li>
+                <li><img src="images/featured5.jpeg" alt="Photo with dummbells"></li>
+              </ul>
+            </li>
+          EINDE HOOFDMENU ACCESSOIRES 
+          </ul> -->
                 </li>
             </ul>
-            <script src="scripts/script.js"></script>
         </nav>
-       
-</header>
-    <main>
-        <section class="banner">
-            <img src="images/banner.jpg" alt="Banner">
-        <div class="overlay-content">
-            <h2>De black friday sale</h2>
-            <p>Vanaf 21 november, 17:00 uur. Download de app en maak alvast een wishlist zodat je je favo fits straks zo snel mogelijk kunt scoren.</p>
-            <a href="#">Download de app</a>
+        <div class="icons">
+            <div class="searchbar">
+                <input type="search" placeholder="Wat zoek je vandaag?">
+                <a href="#"><img src="images/svg/search.svg" alt="Search"></a>
+            </div>
+            <a href="#"><img src="images/svg/hearticon.svg" alt="Wishlist"></a> 
+            <a href="#"><img src="images/svg/profileicon.svg" alt="Profile"></a> 
+            <a href="#"><img src="images/svg/bagicon.svg" alt="Shopping bag"></a>
         </div>
-    </section>
+    </header>
+    <main>
+        <section class="banner"> <img src="images/banner.jpg" alt="Banner">
+            <div class="overlay-content">
+                <h2>De black friday sale</h2>
+                <p>Vanaf 21 november, 17:00 uur. Download de app en maak alvast een wishlist zodat je je favo fits straks zo snel mogelijk kunt scoren.</p>
+                <a href="#">Download de app</a>
+            </div>
+        </section>
         <section class="section-video">
-                <video class="video-desktop" autoplay muted>
-                    <source src="video/Male_Look_Montage_V2_BANNER_3840x1440.mp4" type="video/mp4">
-                </video>
-                <video class="video-mobile" autoplay muted>
-                    <source src="video/Dual_Looks_Montage_V2_BANNER_1080x1920.mp4" type="video/mp4">
-                </video>
-                <div class="overlay-content2">
+            <video class="video-desktop" autoplay muted>
+                <source src="video/Male_Look_Montage_V2_BANNER_3840x1440.mp4" type="video/mp4">
+            </video>
+            <video class="video-mobile" autoplay muted>
+                <source src="video/Dual_Looks_Montage_V2_BANNER_1080x1920.mp4" type="video/mp4">
+            </video>
+            <div class="overlay-content2">
                 <h2>Essentials voor de winter</h2>
                 <p>De duurzame, betaalbare, supercomfortabele laagjes voor het hele seizoen en langer.</p>
-                <a href="#" class="buttonvideo">Heren</a>
-                <a href="#" class="buttondames">Dames</a>
+                <a href="#" class="buttonvideo">Heren</a> <a href="#" class="buttondames">Dames</a>
             </div>
         </section>
         <section>
@@ -112,9 +389,9 @@
                     <p>Regular Fit</p>
                     <p>Black</p>
                     <p>€45</p>
-                </li> 
+                </li>
             </ul>
-                <ul class="container-product">
+            <ul class="container-product">
                 <li class="product">
                     <img src="images/clothing/blackpants.jpg" alt="Black sweatpants front">
                     <a href="#"><img src="images/svg/hearticon.svg" class="search-icon" alt="Search"></a>
@@ -135,8 +412,7 @@
                     <p>Beige</p>
                     <p>€33</p>
                 </li>
-                <li class="product">
-                    <img src="images/clothing/sweatpantsblack.jpg" alt="Black sweatpants with gymshark in classic bold font">
+                <li class="product"> <img src="images/clothing/sweatpantsblack.jpg" alt="Black sweatpants with gymshark in classic bold font">
                     <a href="#"><img src="images/svg/hearticon.svg" class="search-icon" alt="Search"></a>
                     <a href="#"><img src="images/svg/bagicon.svg" class="bag-icon" alt="bag-icon"></a>
                     <p>4.3</p>
@@ -146,44 +422,45 @@
                     <p>€45</p>
                 </li>
             </ul>
-            
         </section>
         <section class="shop-by-price">
             <h3>Winkel op prijs</h3>
-                <ul class="container-price">
-                    <li>
-                        <img src="images/gymtop.jpeg" alt="Gymtops">
-                        <h3>Dames cadeaus onder €30</h3>
-                        <a href="#">Shop nu</a>
-                    </li>
-                    <li>
-                        <img src="images/gymshirt.jpeg" alt="Gymtops">
-                        <h3>Heren cadeaus onder €30</h3>
-                        <a href="#">Shop nu</a>
-                    </li>
-                    <li>
-                        <img src="images/gymtopheadphone.jpeg" alt="Gymtops">
-                        <h3>Alle dameskleding beschikbaar</h3>
-                        <a href="#">Shop nu</a>
-                    </li>
-                </ul>
+            <ul class="container-price">
+                <li> <img src="images/gymtop.jpeg" alt="Gymtops">
+                    <h3>Dames cadeaus onder €30</h3>
+                    <a href="#">Shop nu</a>
+                </li>
+                <li> <img src="images/gymshirt.jpeg" alt="Gymtops">
+                    <h3>Heren cadeaus onder €30</h3>
+                    <a href="#">Shop nu</a>
+                </li>
+                <li> <img src="images/gymtopheadphone.jpeg" alt="Gymtops">
+                    <h3>Alle dameskleding beschikbaar</h3>
+                    <a href="#">Shop nu</a>
+                </li>
+            </ul>
         </section>
-        
         <section class="section-training">
             <h4>Hoe ziet jouw training eruit?</h4>
             <ul class="container-training">
                 <li>
-                    <video autoplay muted><source src="video/liftingvideo.mp4" type="video/mp4"></video>
+                    <video autoplay muted>
+                        <source src="video/liftingvideo.mp4" type="video/mp4">
+                    </video>
                     <h3>Lifting</h3>
                     <a href="#">Shop nu</a>
                 </li>
                 <li>
-                    <video autoplay muted><source src="video/hardloopvideo.mp4" type="video/mp4"></video>
+                    <video autoplay muted>
+                        <source src="video/hardloopvideo.mp4" type="video/mp4">
+                    </video>
                     <h3>Hardlopen</h3>
                     <a href="#">Shop nu</a>
                 </li>
                 <li>
-                    <video autoplay muted><source src="video/yogavideo.mp4" type="video/mp4"></video>
+                    <video autoplay muted>
+                        <source src="video/yogavideo.mp4" type="video/mp4">
+                    </video>
                     <h3>Yoga</h3>
                     <a href="#">Shop nu</a>
                 </li>
@@ -193,7 +470,9 @@
     <footer>
         <section class="links">
             <ul>
-                <li><h5>Women's leggings</h5></li>
+                <li>
+                    <h5>Women's leggings</h5>
+                </li>
                 <li><a href="#">Leggings</a></li>
                 <li><a href="#">Sportleggings met zakken</a></li>
                 <li><a href="#">Hoge taille Gymleggings</a></li>
@@ -203,7 +482,9 @@
                 <li><a href="#">Naadloze leggings</a></li>
             </ul>
             <ul>
-                <li><h5>Women's leggings</h5></li>
+                <li>
+                    <h5>Women's leggings</h5>
+                </li>
                 <li><a href="#">Sportkleding voor dames</a></li>
                 <li><a href="#">Womens Gym Shorts</a></li>
                 <li><a href="#">Running Shorts</a></li>
@@ -213,72 +494,46 @@
                 <li><a href="#">Bijpassende Setjes</a></li>
                 <li><a href="#">Loungewear</a></li>
             </ul>
-        <ul>
-            <li><h5>Men's gymwear</h5></li>
-            <li><a href="#">Sportkleding voor heren</a></li>
-            <li><a href="#">Mens Gym shorts</a></li>
-            <li><a href="#">Shorts with Pockets</a></li>
-            <li><a href="#">Hardloopbroeken voor heren </a></li>
-            <li><a href="#">Sportshirts</a></li>
-            <li><a href="#">Mouwloos</a></li>
-            <li><a href="#">Gym stringers</a></li>
-            <li><a href="#">Heren Base Layer</a></li>
-        </ul>
-       
-        <ul>
-            <li> <h5>Accessoires</h5></li>
-            <li><a href="#">Damesondergoed</a></li>
-            <li><a href="#">Heren ondergoed</a></li>
-            <li><a href="#">Tassen</a></li>
-            <li><a href="#">Sporttassen</a></li>
-            <li><a href="#">Sportsokken</a></li>
-            <li><a href="#">Crew socks</a></li>
-            <li><a href="#">Petten</a></li>
-            <li><a href="#">Beanies</a></li>
-        </ul>
+            <ul>
+                <li>
+                    <h5>Men's gymwear</h5>
+                </li>
+                <li><a href="#">Sportkleding voor heren</a></li>
+                <li><a href="#">Mens Gym shorts</a></li>
+                <li><a href="#">Shorts with Pockets</a></li>
+                <li><a href="#">Hardloopbroeken voor heren </a></li>
+                <li><a href="#">Sportshirts</a></li>
+                <li><a href="#">Mouwloos</a></li>
+                <li><a href="#">Gym stringers</a></li>
+                <li><a href="#">Heren Base Layer</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <h5>Accessoires</h5>
+                </li>
+                <li><a href="#">Damesondergoed</a></li>
+                <li><a href="#">Heren ondergoed</a></li>
+                <li><a href="#">Tassen</a></li>
+                <li><a href="#">Sporttassen</a></li>
+                <li><a href="#">Sportsokken</a></li>
+                <li><a href="#">Crew socks</a></li>
+                <li><a href="#">Petten</a></li>
+                <li><a href="#">Beanies</a></li>
+            </ul>
         </section>
         <section class="paragraph">
             <h4>Sportkleding</h4>
             <p>Onze sportkleding is ontworpen om het beste uit jezelf te halen. Want als je maximaal wilt presteren, zou niets je in de weg moeten zitten - zeker je gymkleding niet.</p>
             <h5>Gymshark Sportkleding</h5>
-            <p>We zorgen er met onze sportkleding voor dat je het beste uit jezelf kunt halen ongeacht de sport die je beoefent. Onze collecties zijn ontworpen om je de steun te geven die je nodig hebt om optimaal te kunnen presteren. 
-                Of dat nu op de baan, in de gym of in de studio is. Tussen onze <strong>dames- en herencollecties</strong> vind je zweetafvoerende <strong>t-shirts en tanktops, shorts, joggingbroeken, leggings, sport-bh’s</strong> en meer. 
-                Veel van onze kleding is afgewerkt met een comfortabele seamless technologie, waarmee je wrijving tijdens het trainen voorkomt. 
-                Daarnaast maken we voor sommige collecties gebruik van innovatieve stoffen en technologieën. 
-                Zo helpt ESNCE™️ technologie bijvoorbeeld om geurtjes tijdens het sporten tegen te gaan en geeft de super elastische en boterzachte RLSE™️ stof je ultieme bewegingsvrijheid. 
-                Alles wat we ontwerpen doen we vanuit de gedachte dat we trainingen en rustdagen naar een hoger niveau willen tillen, zodat jij je doelen keer op keer zo comfortabel mogelijk bereikt.
-            </p>
-            </section>
-            <nav>
-            <details>
-                <summary>Hulp</summary>
-                <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Leveringen & retouren</a></li>
-                    <li><a href="#">Retour aanvragen</a></li>
-                    <li><a href="#">Leveringen & retouren</a></li>
-                    <li><a href="#">Retour aanvragen</a></li>
-                </ul>
-            </details>
-            <details>
-                <summary>Mijn account</summary>
-                <ul>
-                    <li><a href="#">Inloggen</a></li>
-                    <li><a href="#">Registreer</a></li>
-                </ul>
-            </details>
-            <details>
-                <summary>Pagina's</summary>
-                <ul>
-                    <li><a href="#">Banen</a></li>
-                    <li><a href="#">Over ons</a></li>
-                    <li><a href="#">Studentenkorting</a></li>
-                    <li><a href="#">Factorylist</a></li>
-                </ul>
-            </details> 
-
-            </nav>
+            <p>We zorgen er met onze sportkleding voor dat je het beste uit jezelf kunt halen ongeacht de sport die je beoefent. Onze collecties zijn ontworpen om je de steun te geven die je nodig hebt om optimaal te kunnen presteren.
+                Of dat nu op de baan, in de gym of in de studio is. Tussen onze <strong>dames- en herencollecties</strong> vind je zweetafvoerende <strong>t-shirts en tanktops, shorts, joggingbroeken, leggings, sport-bh’s</strong> en meer.
+                Veel van onze kleding is afgewerkt met een comfortabele seamless technologie, waarmee je wrijving tijdens het trainen voorkomt.
+                Daarnaast maken we voor sommige collecties gebruik van innovatieve stoffen en technologieën.
+                Zo helpt ESNCE™️ technologie bijvoorbeeld om geurtjes tijdens het sporten tegen te gaan en geeft de super elastische en boterzachte RLSE™️ stof je ultieme bewegingsvrijheid.
+                Alles wat we ontwerpen doen we vanuit de gedachte dat we trainingen en rustdagen naar een hoger niveau willen tillen, zodat jij je doelen keer op keer zo comfortabel mogelijk bereikt. </p>
+        </section>
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
